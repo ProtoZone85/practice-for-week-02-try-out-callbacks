@@ -25,9 +25,13 @@ function myForEach(array, cb) {
     // Your code here
 }
 
+
+// TESTING GIT PUSH
+
+
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
     module.exports = myForEach;
-} catch(e) {
+} catch (e) {
     return null;
 }
