@@ -21,10 +21,23 @@ myForEach(['laika', 'belka'], function (el) {
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
 
+// Problem: create function that calls a callback on each element of the array
+// Input: Array
+// Callback input: element and index
+// Create callback to invoke in the myForEach function
+// create variable array for cities
+
+let cities = ['Houston', 'New York', 'Tokyo']
+
 function myForEach(array, cb) {
     // Your code here
+    let result = cb()
+    for (let )
 }
 
+let upperFunction =
+
+    console.log(myForEach(cities,))
 
 // TESTING GIT PUSH again
 
