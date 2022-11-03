@@ -19,13 +19,38 @@ let result2 = myFilter(['choose', 'big', 'words', 'only'], function (s) {
 console.log(result2);      // ['choose', 'words', 'only']
 *******************************************************************************/
 
+// input: array and cb
+// output: new array that meet requirements
+// call back determines if number is odd
+// invoking cb in myFilter with num value
+// create empty array to hold odd nums
+// if codition: is odd pass into array
+// return new array
+
+let arr = [1, 2, 3]
+
+let isOdd = (num) => { return num % 2 !== 0 }
+
+
 function myFilter(array, cb) {
     // Your code here
+    let oddArray = [];
+    for (let values of array) {
+        let oddNum = cb(values);
+
+        if (oddNum === true) {
+            oddArray.push(values)
+        }
+
+    }
+    return oddArray
 }
+
+console.log(myFilter(arr, isOdd))
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
     module.exports = myFilter;
-} catch(e) {
+} catch (e) {
     return null;
 }
