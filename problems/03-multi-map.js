@@ -28,6 +28,6 @@ function multiMap(val, n, cb) {
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
   module.exports = multiMap;
-} catch(e) {
+} catch (e) {
   return null;
 }

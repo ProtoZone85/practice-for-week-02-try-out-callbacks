@@ -16,13 +16,34 @@ let result2 = myMap(['run', 'Forrest'], function (el) {
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
 
+// Input: array and callback
+// Output: Array of new elements (GDP # replacing country)
+//
+
+let countries = ['USA', 'China', 'Russia']
+
 function myMap(array, cb) {
+
     // Your code here
+    // let gdp = [];
+    // let gdpValue = ["23T", "18T", "1.8T"];
+
+    // for (let values of array) {
+    array = cb(array)
+
+    return countries
+
+    // }
+
 }
+
+let spliceCountries = (arr) => { return arr.splice(0, 3, "23T", "18T", "1.8T") }
+
+console.log(myMap(countries, spliceCountries));
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
     module.exports = myMap;
-} catch(e) {
+} catch (e) {
     return null;
 }
