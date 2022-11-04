@@ -2,7 +2,7 @@
 Write a function `myMap` that accepts an array and a callback as arguments.
 The function return an array of new elements obtained by calling the callback on
 each element of the array, passing in the element.
-
+//Test
 Do not use the built in Array.map
 
 // Examples
